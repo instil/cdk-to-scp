@@ -1,0 +1,19 @@
+{
+  "name": "cdk-to-scp",
+  "version": "0.0.1",
+  "main": "index.ts",
+  "repository": "git@github.com:instil/cdk-to-scp.git",
+  "author": "Matthew Wilson <matthew.wilson@instil.co>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "generate-scp": "ts-node src/index.ts"
+  },
+  "devDependencies": {
+    "aws-cdk-lib": "2.121.1",
+    "ts-node": "10.4.0",
+    "typescript": "5.3.3"
+  }
+}
