@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 import { CloudAssembly } from "aws-cdk-lib/cx-api";
 
 type Resources = Record<string, Resource>;
@@ -28,8 +30,6 @@ function generateScp() {
     });
   }).filter(resource => resource.startsWith("AWS::") && !resource.startsWith("AWS::CDK::"));
 
-  console.log(resources);
-
   const serviceNames = resources.map(resource => {
     const parts = resource.split("::");
     const serviceName = parts[1];
@@ -37,8 +37,6 @@ function generateScp() {
   });
 
   const uniqueServiceNames = [...new Set(serviceNames)];
-
-  console.log(uniqueServiceNames);
 
   const scp: ServiceControlPolicy = {
     Version: "2012-10-17",
