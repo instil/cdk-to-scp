@@ -1,6 +1,6 @@
 {
   "name": "@instil/cdk-to-scp",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
@@ -16,9 +16,11 @@
     "build": "tsc",
     "watch": "tsc -w"
   },
+  "dependencies": {
+    "aws-cdk-lib": "2.121.1"
+  },
   "devDependencies": {
     "@types/node": "^20.11.5",
-    "aws-cdk-lib": "2.121.1",
     "ts-node": "10.4.0",
     "typescript": "5.3.3"
   }

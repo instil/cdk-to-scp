@@ -7,7 +7,7 @@ This project parses your CDK output, determines what services are in use by your
 Install the package
 
 ```bash
-  npm install -g cdk-to-scp
+  npm install -g @instil/cdk-to-scp
 ```
 
 Navigate to the folder in your project that contains the `cdk.out` folder
